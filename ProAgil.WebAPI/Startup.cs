@@ -55,10 +55,6 @@ namespace ProAgil.WebAPI
 
             //app.UseHttpsRedirection();
 
-
-            //app.AddCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
-            //app.AddCors("AllowSpecificOrigin");
-            //app.AddCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             app.UseCors(builder =>
             builder.WithOrigins("http://localhost:4200"));
 
