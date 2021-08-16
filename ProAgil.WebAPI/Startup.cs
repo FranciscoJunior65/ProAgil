@@ -57,7 +57,7 @@ namespace ProAgil.WebAPI
 
             app.UseCors(builder =>
             builder.WithOrigins("http://localhost:4200"));
-
+            app.UseStaticFiles();
             app.UseMvc();
             
         }
