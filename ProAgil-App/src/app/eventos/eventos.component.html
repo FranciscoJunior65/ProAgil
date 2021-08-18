@@ -1,10 +1,25 @@
-<div class="form-inline">
-  <div class="form-group mb-2">
-    <label class="mr-2">Filtro:</label>
-    <input type="text" class="form-control mr-2" placeholder="buscar"
+<div class="row">
+  <div class="col">
+    <label class="mr-2">Tema:</label>
+    <input type="text" class="form-control mr-2" placeholder="buscar Tema"
+    [style.width.px]="300"
     [(ngModel)]="filtroLista">
   </div>
+  <div class="col">
+    <label class="mr-2">Local:</label>
+    <input type="text" class="form-control mr-2" placeholder="buscar Local"
+    [style.width.px]="300"
+    [(ngModel)]="filtroLocal">    
+  </div> 
+  <div class="col">
+    <label class="mr-2">Data:</label>
+    <input type="text" class="form-control mr-2" placeholder="buscar Data"
+    [style.width.px]="300"
+    [(ngModel)]="filtroData">    
+  </div>
+  
 </div>
+
 <h3>Filtro: {{filtroLista}}</h3>
 <table class="table table-striped">
   <thead class="thead-light">
