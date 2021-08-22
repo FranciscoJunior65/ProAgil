@@ -1,3 +1,6 @@
+using System.Security.AccessControl;
+using System;
+using System.Collections.Generic;
 
 namespace ProAgil.Domain
 {
@@ -8,7 +11,7 @@ namespace ProAgil.Domain
         public DateTime DataEvento { get; set; }
         public string Tema { get; set; }
         public int QtdPessoas { get; set; }        
-        public string imagemUrl { get; set; }
+        public string imagemURL { get; set; }
         public string Telefone { get; set; }
         public string Email { get; set; }
         public List<Lote> Lotes { get; set; }

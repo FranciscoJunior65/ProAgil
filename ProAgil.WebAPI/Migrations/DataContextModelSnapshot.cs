@@ -2,12 +2,12 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using ProAgil.WebAPI.Data;
+using ProAgil.WebAPI;
 
 namespace ProAgil.WebAPI.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    partial class DataContext : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {

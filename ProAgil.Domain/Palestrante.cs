@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+
 namespace ProAgil.Domain
 {
     public class Palestrante
@@ -5,7 +8,7 @@ namespace ProAgil.Domain
         public int Id { get; set; }
         public string Nome { get; set; }
         public string MiniCurriculo { get; set; }
-        public string imagemUrl { get; set; }
+        public string imagemURL { get; set; }
         public string Telefone { get; set; }
         public string Email { get; set; }
         public List<RedeSocial> RedeSocial { get; set; }
