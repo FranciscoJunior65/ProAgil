@@ -1,9 +1,6 @@
-using System;
-using System.Security.AccessControl;
 using System.Threading.Tasks;
-{
-    
-}
+using ProAgil.Domain;
+
 namespace ProAgil.Repository
 {
     public interface IProAgilRepository
@@ -17,11 +14,11 @@ namespace ProAgil.Repository
 
         //EVENTOS
         Task<Evento[]> GetAllEventoAsyncByTema(string tema, bool includePalestrantes);
-        Task<Evento[]> GetAllEventoAsync(bool includePalestrantes);
-        Task<Evento[]> GetAllEventoAsyncById(int EventoId, bool includePalestrantes);
+        Task<Evento[]> GetAllEventoAsync(bool includePalestrantes = false);
+        Task<Evento> GetAllEventoAsyncById(int EventoId, bool includePalestrantes);
 
         //Palestrante
         Task<Evento[]> GetAllPalestranteAsyncByName(bool includePalestrantes);
-        Task<Evento[]> GetAllPalestranteAsyncById(int PalestranteId, bool includePalestrantes);
+        Task<Evento[]> GetAllPalestranteAsync(int PalestranteId, bool includePalestrantes);
     }
 }
